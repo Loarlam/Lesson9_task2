@@ -15,9 +15,9 @@ namespace Task2
         {
             int firstValue = 7, secondValue = 4;
             CalculatorDelegate AddDelegate = (int firstDigit, int secondDigit) => { return firstDigit + secondDigit; };
-            CalculatorDelegate SubDelegate = (int firstDigit, int secondDigit) => firstDigit - secondDigit;
-            CalculatorDelegate Mul = (int firstDigit, int secondDigit) => firstDigit * secondDigit;
-            CalculatorDelegate Del = (int firstDigit, int secondDigit) => firstDigit / secondDigit;
+            CalculatorDelegate SubDelegate = (int firstDigit, int secondDigit) => { return firstDigit - secondDigit; };
+            CalculatorDelegate Mul = (int firstDigit, int secondDigit) => { return firstDigit * secondDigit; };
+            CalculatorDelegate Del = (int firstDigit, int secondDigit) => { return firstDigit / secondDigit; };
         }
     }
 }
